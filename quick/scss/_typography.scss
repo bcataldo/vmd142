@@ -25,3 +25,30 @@ h3 {
 h4 {
 	font-size: $font-size-h4;
 }
+
+//classes 
+.home-text {
+	color: $white;
+	text-transform: uppercase; // refer to ‘flexible, creative, responsive’ text in PNG
+	padding: 10px 0;
+	border-bottom: 3px solid rgba(255,255,255,0.15);
+	margin: 20px 0;
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+
+.home-h1 {
+	color: $blue;
+	font-size: 4.5em;
+	font-weight: 200;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.home-h1>span {
+	color: $white;
+}
+
+.lead {
+	letter-spacing: 1px;
+	margin-bottom: 60px;
+}

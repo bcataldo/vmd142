@@ -53,3 +53,311 @@ h3 {
 h4 {
   font-size: 1em;
 }
+
+/* line 30, ../scss/_typography.scss */
+.home-text {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+  margin: 20px 0;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+/* line 40, ../scss/_typography.scss */
+.home-h1 {
+  color: #25cbf5;
+  font-size: 4.5em;
+  font-weight: 200;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 47, ../scss/_typography.scss */
+.home-h1 > span {
+  color: white;
+}
+
+/* line 51, ../scss/_typography.scss */
+.lead {
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+/* line 1, ../scss/_navbar.scss */
+.navbar-default {
+  background-color: white;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 6, ../scss/_navbar.scss */
+.navbar-default .navbar-brand {
+  font-weight: 700;
+  color: #333333;
+  font-size: 1.5em;
+}
+
+/* line 12, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #333333;
+}
+/* line 15, ../scss/_navbar.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #25cbf5;
+}
+
+/* line 4, ../scss/_buttons.scss */
+.btn-theme, .btn-dark, .btn-cta, .btn-cta-o {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-radius: 0;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+/* line 14, ../scss/_buttons.scss */
+.btn-dark {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.3);
+  color: #777777;
+}
+/* line 21, ../scss/_buttons.scss */
+.btn-dark:hover, .btn-dark:focus {
+  background: #000;
+  color: white;
+}
+
+/* line 27, ../scss/_buttons.scss */
+.btn-cta {
+  background-color: #25cbf5;
+  color: white;
+}
+/* line 33, ../scss/_buttons.scss */
+.btn-cta:hover, .btn-cta:focus {
+  background-color: #0ab2dd;
+  color: white;
+}
+
+/* line 39, ../scss/_buttons.scss */
+.btn-cta-o {
+  color: white;
+  border: 1px solid white;
+}
+/* line 45, ../scss/_buttons.scss */
+.btn-cta-o:hover, .btn-cta-o:focus {
+  background-color: white;
+  color: #353739;
+}
+
+/* line 3, ../scss/_forms.scss */
+.form-control {
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+/* line 8, ../scss/_forms.scss */
+label {
+  font-weight: bold;
+}
+
+/* line 3, ../scss/_other.scss */
+#home {
+  background-color: #333333;
+  padding: 40px 0;
+}
+
+/* line 8, ../scss/_other.scss */
+#cta-1 {
+  background-color: #f5f4f2;
+  padding: 40px 0;
+}
+
+/* line 13, ../scss/_other.scss */
+#testimonials {
+  background-color: #333333;
+}
+
+/* line 17, ../scss/_other.scss */
+#cta-2 {
+  background-color: #25cbf5;
+  padding: 40px 0;
+}
+
+/* line 22, ../scss/_other.scss */
+#services {
+  background-color: #333333;
+}
+
+/* line 26, ../scss/_other.scss */
+#cta-3 {
+  background-color: #333333;
+  padding: 40px 0;
+}
+
+/* line 31, ../scss/_other.scss */
+#footer {
+  background-color: #333333;
+  color: #777777;
+  padding: 20px;
+}
+
+/* line 37, ../scss/_other.scss */
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+/* line 42, ../scss/_other.scss */
+.section-heading {
+  margin-bottom: 40px;
+}
+
+/* line 48, ../scss/_other.scss */
+.color-reverse,
+.color-reverse h2,
+.color-reverse .icon {
+  color: white;
+}
+
+/* line 53, ../scss/_other.scss */
+.color-reverse .icon:before,
+.color-reverse .icon:after {
+  border-bottom-color: white;
+}
+
+/* line 58, ../scss/_other.scss */
+.icon {
+  display: inline-block;
+  font-size: 1.3em;
+  line-height: 1.42857;
+  width: 130px;
+  margin: 0 auto;
+  position: relative;
+  color: #25cbf5;
+}
+
+/* line 69, ../scss/_other.scss */
+.icon:before,
+.icon:after {
+  display: inline-block;
+  content: "";
+  border-bottom: 1px solid #25cbf5;
+  position: absolute;
+  top: 10px;
+  width: 50px;
+}
+
+/* line 78, ../scss/_other.scss */
+.icon:before {
+  left: 0;
+}
+
+/* line 82, ../scss/_other.scss */
+.icon:after {
+  right: 0;
+}
+
+/* line 86, ../scss/_other.scss */
+.icon-bg {
+  color: white;
+}
+
+/* line 91, ../scss/_other.scss */
+.icon-bg:before,
+.icon-bg:after {
+  border-bottom-color: white;
+}
+
+/* line 97, ../scss/_other.scss */
+.sign {
+  color: #25cbf5;
+}
+
+/* line 101, ../scss/_other.scss */
+.pullquote {
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+}
+
+/* line 108, ../scss/_other.scss */
+.about-col .fa {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  color: #777777;
+  border-radius: 50%;
+  background-color: #f5f4f2;
+}
+
+/* line 119, ../scss/_other.scss */
+.services-col {
+  color: #25cbf5;
+}
+
+/* line 123, ../scss/_other.scss */
+.services-col h3 {
+  color: #25cbf5;
+  margin-top: 0;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 1.75em;
+}
+
+/* line 131, ../scss/_other.scss */
+.services-col p {
+  color: #777777;
+  letter-spacing: 1px;
+  font-weight: 200;
+  line-height: 2;
+}
+
+/* line 138, ../scss/_other.scss */
+.services-col .fa {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+  background-color: #25cbf5;
+  border-radius: 35px;
+  margin-bottom: 10px;
+}
+
+/* line 150, ../scss/_other.scss */
+.contact-hours .fa {
+  color: #25cbf5;
+}
+
+/* line 154, ../scss/_other.scss */
+.social-channels .fa {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #777777;
+  background-color: #f5f4f2;
+  margin-bottom: 10px;
+}
+
+/* line 166, ../scss/_other.scss */
+#footer ul li a {
+  color: #777777;
+  padding: 10px;
+}
+/* line 170, ../scss/_other.scss */
+#footer ul li a:hover, #footer ul li a:focus {
+  color: #f5f4f2;
+}
+
+/* line 177, ../scss/_other.scss */
+#cta-1 .lead {
+  letter-spacing: 0;
+  font-style: normal;
+}

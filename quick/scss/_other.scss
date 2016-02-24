@@ -1,0 +1,180 @@
+// padding and color not incorporated into the other partials
+
+#home {
+	background-color: $gray-dark;
+	padding: 40px 0;
+}
+
+#cta-1 {
+background-color: $gray-lighter;
+padding: 40px 0;
+}
+
+#testimonials {
+	background-color: $gray-dark;
+}
+
+#cta-2 {
+	background-color: $blue;
+	padding: 40px 0;
+}
+
+#services {
+	background-color: $gray-dark;
+}
+
+#cta-3 {
+	background-color: $gray-dark;
+	padding: 40px 0;
+}
+
+#footer {
+	background-color: $gray-dark;
+	color: $gray;
+	padding: 20px;
+}
+
+.section-padding {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.section-heading {
+	margin-bottom: 40px;
+}
+
+.color-reverse,
+.color-reverse h2,
+.color-reverse .icon {
+	color: $white;
+}
+
+.color-reverse .icon:before,
+.color-reverse .icon:after {
+	border-bottom-color: $white;
+}
+
+// styling the section header icons
+.icon {
+    display: inline-block;
+    font-size: 1.3em; // 1.3x base
+    line-height: $line-height-base;
+    width: 130px;
+    margin: 0 auto;
+    position: relative;
+	color: $blue;
+}
+
+.icon:before,
+.icon:after {
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid $blue;
+    position: absolute;
+    top: 10px;
+    width: 50px;
+}
+
+.icon:before {
+    left: 0;
+}
+
+.icon:after {
+    right: 0;
+}
+
+.icon-bg {
+	color: $white;
+}
+
+.icon-bg:before,
+.icon-bg:after {
+	border-bottom-color: $white;
+}
+
+// add rules for the testimonials section
+
+.sign {
+    color: $blue;
+}
+
+.pullquote {
+    letter-spacing: 0px;
+	margin-bottom: 16px;
+}
+
+
+//styles for the about icons
+.about-col .fa {
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	color: $gray;
+	border-radius: 50%;
+	background-color: $gray-lighter;
+}
+
+// adds rules for the services section
+
+.services-col {
+	color: $blue;
+}
+
+.services-col h3 {
+	color: $blue;
+	margin-top: 0;
+	font-weight: 200;
+	letter-spacing: 1px;
+	font-size: 1.75em;
+}
+
+.services-col p {
+	color: $gray;
+	letter-spacing: 1px;
+	font-weight: 200;
+	line-height: 2;
+}
+
+.services-col .fa {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: $white;
+    background-color: $blue;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+// add rules for the contact section
+
+.contact-hours .fa {
+    color: $blue;
+}
+
+.social-channels .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: $gray;
+    background-color: $gray-lighter;
+    margin-bottom: 10px;
+}
+
+//Footer styles
+#footer ul li a
+{
+	color: $gray;
+	padding: 10px;
+	&:hover,
+	&:focus {
+	color: $gray-lighter;
+	}
+
+}
+
+//rules for cta-1
+#cta-1 .lead {
+	letter-spacing: 0;
+	font-style: normal;
+}

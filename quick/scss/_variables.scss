@@ -26,3 +26,15 @@ $line-height-base: 1.428571429; // same as Bootstrap default
 $headings-font-weight: 700;
 $headings-line-height: 1.1;
 $headings-color: $gray-dark;
+
+// Buttons
+$btn-font-family: 'Montserrat', sans-serif;
+$btn-font-size: .8em; // .8x base
+$btn-font-weight: 200; //lighter than default
+
+// Navbar
+$navbar-default-bg: $white;
+$navbar-default-font-family: $font-family-headings;
+$navbar-default-link-color: $gray-dark;
+$navbar-default-link-hover-color: $blue;
+$navbar-brand-color: $gray-dark;
