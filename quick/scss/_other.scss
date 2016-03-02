@@ -1,5 +1,6 @@
 // padding and color not incorporated into the other partials
 
+
 #home {
 	background-color: $gray-dark;
 	padding: 40px 0;
@@ -45,6 +46,7 @@ padding: 40px 0;
 
 .color-reverse,
 .color-reverse h2,
+.color-reverse h3,
 .color-reverse .icon {
 	color: $white;
 }
@@ -94,9 +96,6 @@ padding: 40px 0;
 
 // add rules for the testimonials section
 
-.sign {
-    color: $blue;
-}
 
 .pullquote {
     letter-spacing: 0px;
@@ -116,8 +115,19 @@ padding: 40px 0;
 
 // adds rules for the services section
 
+//rule that centers for smaller screens: mobile first
 .services-col {
 	color: $blue;
+	text-align: center;
+
+}
+
+//rule that aligns left for larger screens: mobile first
+
+@media (min-width: 768px) {
+    .services-col {
+        text-align: left;
+    }
 }
 
 .services-col h3 {
@@ -161,20 +171,66 @@ padding: 40px 0;
     margin-bottom: 10px;
 }
 
-//Footer styles
-#footer ul li a
-{
-	color: $gray;
-	padding: 10px;
-	&:hover,
-	&:focus {
-	color: $gray-lighter;
-	}
-
-}
 
 //rules for cta-1
 #cta-1 .lead {
 	letter-spacing: 0;
 	font-style: normal;
+}
+
+//rules for author
+.author {
+    color: $blue;
+    font-size: 1.1em;
+}
+
+//rules for portfolio overlay
+
+.item-img-wrap{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+}
+.item-img-wrap img{
+    @include prefix(transition, all 200ms linear, webkit moz); // use prefix mixin for this CSS3 property
+}
+
+.item-img-overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.item-img-overlay span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/plus.png) no-repeat center center rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    @include prefix(transition, opacity 250ms linear, webkit moz); // use prefix mixin for this CSS3 property
+}
+
+
+.item-img-wrap:hover .item-img-overlay span{
+    opacity: 1;
+}
+.item-img-wrap:hover img{
+    @include prefix(transform, scale(1.1), webkit moz); // use prefix mixin for this CSS3 property
+}
+
+//group selector bottom Margins 
+.about-col, .team-col, .services-col, .portfolio-col, .facts-col, .blog-col {
+	margin-bottom: 40px;
+}
+
+//blog date
+.blog-col span {
+	color: $gray;
+	font-size: .9em; // .9x base font size
+display: inline-block;
+	margin-bottom: 20px;
 }

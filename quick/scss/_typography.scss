@@ -2,26 +2,29 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $font-family-headings;
-  font-weight: $headings-font-weight;
-  line-height: $headings-line-height;
-  color: $headings-color;
+	font-family: $font-family-headings;
+	font-weight: $headings-font-weight;
+	line-height: $headings-line-height;
+	color: $headings-color;
 }
 
 h1,
 h2 {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 h1 {
 	font-size: $font-size-h1;
 }
+
 h2 {
 	font-size: $font-size-h2;
 }
+
 h3 {
 	font-size: $font-size-h3;
 }
+
 h4 {
 	font-size: $font-size-h4;
 }
@@ -31,19 +34,30 @@ h4 {
 	color: $white;
 	text-transform: uppercase; // refer to ‘flexible, creative, responsive’ text in PNG
 	padding: 10px 0;
-	border-bottom: 3px solid rgba(255,255,255,0.15);
+	border-bottom: 3px solid rgba(255, 255, 255, 0.15);
 	margin: 20px 0;
 	letter-spacing: 1px;
 	font-weight: 200;
 }
+
+//mobile first: makes headline size right for smaller screens
 
 .home-h1 {
 	color: $blue;
 	font-size: 4.5em;
 	font-weight: 200;
 	margin-top: 40px;
+	font-size: 2.5em;
 	margin-bottom: 40px;
 }
+
+//makes headline size right for larger screens
+@media (min-width: 768px) {
+	.home-h1 {
+		font-size: 4.5em; // 4.5x base font-size
+	}
+}
+
 .home-h1>span {
 	color: $white;
 }
