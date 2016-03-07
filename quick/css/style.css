@@ -7,11 +7,17 @@ body {
   background-color: white;
 }
 
-/* line 9, ../scss/_scaffolding.scss */
+/* line 10, ../scss/_scaffolding.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 14, ../scss/_scaffolding.scss */
 a {
   color: #333333;
 }
-/* line 13, ../scss/_scaffolding.scss */
+/* line 18, ../scss/_scaffolding.scss */
 a:hover, a:focus {
   color: #25cbf5;
   text-decoration: none;
@@ -161,6 +167,18 @@ h4 {
 .btn-cta-o:hover, .btn-cta-o:focus {
   background-color: white;
   color: #353739;
+}
+
+/* line 52, ../scss/_buttons.scss */
+.btn-blog {
+  color: white;
+  background-color: black;
+}
+/* line 57, ../scss/_buttons.scss */
+.btn-blog:hover, .btn-blog:focus {
+  background-color: #25cbf5;
+  color: white;
+  border: 1px solid #25cbf5;
 }
 
 /* line 3, ../scss/_forms.scss */
@@ -440,4 +458,86 @@ label {
   font-size: .9em;
   display: inline-block;
   margin-bottom: 20px;
+}
+
+/* line 240, ../scss/_other.scss */
+.scrollToTop {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 999999;
+  display: none;
+  background: #25cbf5;
+  opacity: 0.5;
+  -webkit-transform: all 0.3s;
+  -moz-transform: all 0.3s;
+  transform: all 0.3s;
+}
+
+/* line 259, ../scss/_other.scss */
+.scrollToTop:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: white;
+}
+
+/* line 265, ../scss/_other.scss */
+.parallax {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* line 273, ../scss/_other.scss */
+.parallax-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 285, ../scss/_other.scss */
+#home {
+  background-image: url(../img/showcase-1.jpg);
+  padding: 160px 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 291, ../scss/_other.scss */
+#testimonials {
+  background: url(../img/showcase-3.jpg);
+  padding: 80px 0;
+}
+
+/* line 296, ../scss/_other.scss */
+#services {
+  background: url(../img/showcase-2.jpg);
+  padding: 80px 0;
+}
+
+/* line 300, ../scss/_other.scss */
+#facts {
+  background: url(../img/showcase-5.jpg);
+  padding: 80px 0;
+}
+
+/* line 305, ../scss/_other.scss */
+a:link .btn-dark {
+  z-index: 999;
 }
