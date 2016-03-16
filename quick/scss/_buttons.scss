@@ -25,6 +25,7 @@
 	}
 }
 
+
 .btn-cta {
 	@extend .btn-theme;
 	background-color: $blue;
@@ -47,4 +48,16 @@
 		background-color: $white;
 		color: $gray-darker;
 	}
+}
+
+.btn-blog {
+	color: $white;
+	background-color: black;
+	
+	&:hover,
+	&:focus {
+		background-color: $blue;
+		color: $white;
+		border: 1px solid $blue;
+}
 }
