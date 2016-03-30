@@ -1,0 +1,10 @@
+
+//adds info for the browsers
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+      @if $vendors {
+        @each $vendor in $vendors {
+          #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+      }
+      #{$property}: #{$value};
+}

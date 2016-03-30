@@ -1,0 +1,477 @@
+// padding and color not incorporated into the other partials
+
+
+#home {
+	background-color: $gray-dark;
+	padding: 40px 0;
+}
+
+#cta-1 {
+background-color: $gray-lighter;
+padding: 40px 0;
+}
+
+#testimonials {
+	background-color: $gray-dark;
+}
+
+#cta-2 {
+	background-color: $blue;
+	padding: 40px 0;
+}
+
+#services {
+	background-color: $gray-dark;
+}
+
+#cta-3 {
+	background-color: $gray-dark;
+	padding: 40px 0;
+}
+
+#footer {
+	background-color: $gray-dark;
+	color: $gray;
+	padding: 20px;
+}
+
+.section-padding {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.section-heading {
+	margin-bottom: 40px;
+}
+
+.color-reverse,
+.color-reverse h2,
+.color-reverse h3,
+.color-reverse .icon {
+	color: $white;
+}
+
+.color-reverse .icon:before,
+.color-reverse .icon:after {
+	border-bottom-color: $white;
+}
+
+// styling the section header icons
+.icon {
+    display: inline-block;
+    font-size: 1.3em; // 1.3x base
+    line-height: $line-height-base;
+    width: 130px;
+    margin: 0 auto;
+    position: relative;
+	color: $blue;
+}
+
+.icon:before,
+.icon:after {
+    display: inline-block;
+    content: "";
+    border-bottom: 1px solid $blue;
+    position: absolute;
+    top: 10px;
+    width: 50px;
+}
+
+.icon:before {
+    left: 0;
+}
+
+.icon:after {
+    right: 0;
+}
+
+.icon-bg {
+	color: $white;
+}
+
+.icon-bg:before,
+.icon-bg:after {
+	border-bottom-color: $white;
+}
+
+// add rules for the testimonials section
+
+
+.pullquote {
+    letter-spacing: 0px;
+	margin-bottom: 16px;
+}
+
+
+//styles for the about icons
+.about-col .fa {
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	color: $gray;
+	border-radius: 50%;
+	background-color: $gray-lighter;
+	transition: 0.7s ease-in-out; 
+	@include prefix(transition, all 800ms linear, webkit moz);
+}
+
+.about-col:hover .fa {
+background-color: $blue;
+color: $white;
+transform: rotateY(360deg);   
+@include prefix(transform, rotateY(360deg), webkit moz);
+}
+
+.services-col:hover .fa {
+background-color: $blue;
+color: $white;
+transform: rotateY(360deg); // use prefix mixin  
+@include prefix(transform, rotateY(360deg), webkit moz);
+}
+
+
+
+// adds rules for the services section
+
+//rule that centers for smaller screens: mobile first
+.services-col {
+	color: $blue;
+	text-align: center;
+
+}
+
+//rule that aligns left for larger screens: mobile first
+
+@media (min-width: 768px) {
+    .services-col {
+        text-align: left;
+    }
+}
+
+.services-col h3 {
+	color: $blue;
+	margin-top: 0;
+	font-weight: 200;
+	letter-spacing: 1px;
+	font-size: 1.75em;
+}
+
+.services-col p {
+	color: $gray;
+	letter-spacing: 1px;
+	font-weight: 200;
+	line-height: 2;
+}
+
+.services-col .fa {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: $white;
+    background-color: $blue;
+    border-radius: 35px;
+    margin-bottom: 10px;
+	transition: 0.7s ease-in-out;
+	@include prefix(transition, all 700ms linear, webkit moz);
+
+}
+// add rules for the contact section
+
+.contact-hours .fa {
+    color: $blue;
+}
+
+.social-channels .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: $gray;
+    background-color: $gray-lighter;
+    margin-bottom: 10px;
+}
+
+
+//rules for cta-1
+#cta-1 .lead {
+	letter-spacing: 0;
+	font-style: normal;
+}
+
+//rules for author
+.author {
+    color: $blue;
+    font-size: 1.1em;
+}
+
+//rules for portfolio overlay
+
+.item-img-wrap{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+}
+.item-img-wrap img{
+    @include prefix(transition, all 200ms linear, webkit moz); // use prefix mixin for this CSS3 property
+}
+
+.item-img-overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.item-img-overlay span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/plus.png) no-repeat center center rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    @include prefix(transition, opacity 250ms linear, webkit moz); // use prefix mixin for this CSS3 property
+}
+
+
+.item-img-wrap:hover .item-img-overlay span{
+    opacity: 1;
+}
+.item-img-wrap:hover img{
+    @include prefix(transform, scale(1.1), webkit moz); // use prefix mixin for this CSS3 property
+}
+
+//group selector bottom Margins 
+.about-col, .team-col, .services-col, .portfolio-col, .facts-col, .blog-col {
+	margin-bottom: 40px;
+}
+
+//blog date
+.blog-col span {
+	color: $gray;
+	font-size: .9em; // .9x base font size
+display: inline-block;
+	margin-bottom: 20px;
+}
+
+//Scroll to top styling, making it hidden by default, the jquery styles 
+//it to be visible after a certain point
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; 
+    font-weight: bold;
+    color: $white;
+    font-size: 20px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 999999;
+    display: none;
+    background: $blue;
+    opacity: 0.5;
+	@include prefix(transform, all 0.3s, webkit moz);
+}
+
+.scrollToTop:hover {
+    text-decoration:none;
+    opacity: 1;
+    color: $white;
+}
+
+.parallax {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+    background-color: rgba(0,0,0,0.3);
+}
+
+//set background images for parallex effect
+#home {
+    background-image: url(../img/showcase-1.jpg);
+    padding: 160px 0;
+    width: 100%;
+    height: 100%;
+}
+#testimonials {
+    background:url(../img/showcase-3.jpg);
+    padding: 80px 0;
+}
+
+#services {
+    background:url(../img/showcase-2.jpg);
+    padding: 80px 0;
+}
+#facts {
+    background:url(../img/showcase-5.jpg);
+    padding: 80px 0;
+}
+
+a:link .btn-dark {
+	z-index: 999;
+}
+//css for slider
+.main-flex-slider {
+    overflow: hidden;
+}
+
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1;
+}
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  /* fix for flashing background */
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev,
+.owl-carousel .owl-controls .owl-nav .owl-next,
+.owl-carousel .owl-controls .owl-dot {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.owl-carousel .owl-refresh .owl-item {
+  display: none;
+}
+.owl-carousel .owl-item {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+.owl-carousel.owl-text-select-on .owl-item {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+.owl-carousel .owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
