@@ -4,6 +4,23 @@ $(document).ready(function () {
 		topSpacing: 0
 	});
 });
+// smooth scroll
+$(document).ready(function () {
+	$('.scrollto a[href*=#]:not([href=#])').click(function () {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top - 50
+				}, 800);
+				return false;
+			}
+		}
+	});
+});
 
 // scroll to top
 $(document).ready(function(){
@@ -71,3 +88,15 @@ jQuery(document).ready(function($) {
 		type: 'image'
 	});
 });
+
+// wow animate
+var wow = new WOW(
+        {
+            boxClass: 'wow', // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 100, // distance to the element when triggering the animation (default is 0)
+            mobile: false // trigger animations on mobile devices (true is default)
+        }
+);
+wow.init();
+

@@ -111,7 +111,25 @@ padding: 40px 0;
 	color: $gray;
 	border-radius: 50%;
 	background-color: $gray-lighter;
+	transition: 0.7s ease-in-out; 
+	@include prefix(transition, all 800ms linear, webkit moz);
 }
+
+.about-col:hover .fa {
+background-color: $blue;
+color: $white;
+transform: rotateY(360deg);   
+@include prefix(transform, rotateY(360deg), webkit moz);
+}
+
+.services-col:hover .fa {
+background-color: $blue;
+color: $white;
+transform: rotateY(360deg); // use prefix mixin  
+@include prefix(transform, rotateY(360deg), webkit moz);
+}
+
+
 
 // adds rules for the services section
 
@@ -154,6 +172,9 @@ padding: 40px 0;
     background-color: $blue;
     border-radius: 35px;
     margin-bottom: 10px;
+	transition: 0.7s ease-in-out;
+	@include prefix(transition, all 700ms linear, webkit moz);
+
 }
 // add rules for the contact section
 
